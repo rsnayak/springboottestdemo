@@ -10,16 +10,20 @@ pipeline {
     }
     
     stage("test") {
+      
       steps {
         echo 'testing the application...'
       }
     }
     
     stage("deploy") {
+      
       steps {
-        echo "deploying the pipeline...'
+        echo 'deploying the pipeline...'
       }
     }
+    
   }
+  
 }
     
