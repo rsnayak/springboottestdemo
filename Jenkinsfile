@@ -2,7 +2,7 @@ pipeline {
   agent any
   
   tools {
-    maven
+    maven 'Maven'
   }
   
   stages {
@@ -10,7 +10,7 @@ pipeline {
       
       steps {
         echo 'building the application...'
-        sh 'mvn clean install'
+        sh "mvn clean install"
       }
     }
     
